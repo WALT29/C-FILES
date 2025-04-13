@@ -14,6 +14,7 @@ The <fstream> library allows us to work with files in c++
         ofstream MyFile("hello.txt")
     Define the file name in the object 
     use the insertion opperator to write into the file <<
+        MyFile << "Hello world"
     Remember to close the file once you are done ;since its a good practice and frees the memory
 
 */
@@ -23,6 +24,13 @@ The <fstream> library allows us to work with files in c++
     To read files use the ifstream
         ifstream MyReadFile("hello.txt")
     Use the while loop together with the getline(MyReadFile,string)function
+        string myText;
+        while(getline(MyReadFile,myText)){
+            cout<<myText;
+        
+        
+        }
+
     Remember to close the file once you are done ; since its a good practice and frees memory
 
 */
